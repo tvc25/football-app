@@ -1,0 +1,32 @@
+@import url(http://nicholastodor.com/sf/usesf.css);
+
+.index-image {
+  height: 300px;
+  display: inline-block;
+}
+
+li{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.show {
+
+}
+
+div {
+  display: inline-block;
+  padding: .5%;
+}
+
+form {
+  border-radius: 25%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'San Francisco Display', sans-serif;
+}

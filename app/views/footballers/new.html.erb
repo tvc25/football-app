@@ -1,0 +1,25 @@
+<!-- YOU MUST USE AN EQUALS SIGN IN LUNE 2 OR IT WILL NOT WORK -->
+
+<%= form_for @footballer do |f| %>
+
+<%=f.label :first_name %>
+<%=f.text_field :first_name %>
+
+<%=f.label :last_name %>
+<%=f.text_field :last_name %>
+
+<%=f.label :caps %>
+<%= f.text_field :caps %>
+
+<%= f.label :team %>
+<%= f.text_field :team %>
+
+<%= f.label :nationality %>
+<%= f.text_field :nationality %>
+
+<%= f.label :image %>
+<%= f.text_field :image %>
+
+<%= f.submit 'CREATE FOOTBALLER'%>
+
+<%end%>

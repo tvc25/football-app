@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FootballApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= params[:action]%>">
+<h1>|| FOOTBALLERS ||</h1>
+  <header>
+    <nav>
+    <li><%=link_to('Footballers', footballers_path)%></li>
+    <li><%= link_to('New Footballer', new_footballer_path)%></li>
+    </nav>
+  </header>
+<%= yield %>
+
+</body>
+</html>

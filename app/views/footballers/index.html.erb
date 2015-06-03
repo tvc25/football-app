@@ -1,0 +1,15 @@
+<div class="player-list">
+<% @footballers.each do |footballer| %>
+ <div class="list-group-item">
+ <%= link_to footballer_path(footballer.id) do %>
+ <%= image_tag(footballer.image, class: 'index-image')%>
+ <%end%>
+<ul class="footballer">
+    <li><%=link_to(footballer.last_name,footballer_path(footballer.id))%></li>
+     <li><%=link_to('EDIT', edit_footballer_path(footballer.id))%></li>
+    <li><%=link_to('DELETE',footballer_path(footballer.id), method: :delete) %></li>
+
+      </ul>
+    </div>
+  <%end%>
+</div>
